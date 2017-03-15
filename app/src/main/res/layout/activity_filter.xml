@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_720_1136"
+    tools:context="com.anhad.fleetgaurd.activity.FilterActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:background="#fff"
+        android:paddingTop="24dp">
+
+
+
+        <CheckBox
+            android:id="@+id/checkbox_query_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Query Type"
+            android:layout_margin="4dp"/>
+
+
+        <CheckBox
+            android:id="@+id/checkbox_employee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Name"
+            android:layout_margin="4dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="7">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

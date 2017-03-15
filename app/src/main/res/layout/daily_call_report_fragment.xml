@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_720_1136"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/reportType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Report Type"
+                android:singleLine="true"
+                android:text="Daily Call Report" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/customerTypeLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:editable="false"
+                android:focusable="false"
+                android:padding="3dp"
+                android:text="Customer Type:" />
+
+            <RadioGroup
+                android:id="@+id/customerTypeRG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <RadioButton
+                    android:id="@+id/oldRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/old" />
+
+                <RadioButton
+                    android:id="@+id/newRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_string" />
+
+                <RadioButton
+                    android:id="@+id/referenceRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reference" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/referenceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reference Name"
+                android:inputType="textCapWords"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <com.gc.materialdesign.views.MaterialSpinner
+            android:id="@+id/company_name_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            app:ms_floatingLabelText="Company Name"
+            app:ms_hint="Select Company Name"
+            app:ms_thickness="0.5dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/companyNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Company Name"
+                android:inputType="textCapWords"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <com.gc.materialdesign.views.MaterialSpinner
+            android:id="@+id/company_category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            app:ms_floatingLabelText="Company Category"
+            app:ms_hint="Select Company Category"
+            app:ms_thickness="0.5dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_contact_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Person"
+                android:inputType="textCapWords"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:id="@+id/meetingTypeLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:editable="false"
+                android:focusable="false"
+                android:padding="3dp"
+                android:text="Meeting Type:" />
+
+            <RadioGroup
+                android:id="@+id/meetingTypeRG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <RadioButton
+                    android:id="@+id/telephonicRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Telephonic" />
+
+                <RadioButton
+                    android:id="@+id/personallyRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personally Attend" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/meetingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Meeting Time"
+                android:inputType="none"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/meetingDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Meeting Date"
+                android:inputType="none"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/previousMeetingDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pervious Meeting Date"
+                android:inputType="none"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/meeting_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Meeting Reason"
+                android:inputType="textCapSentences"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/meeting_outcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Meeting Outcome"
+                android:inputType="textCapSentences"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <com.gc.materialdesign.views.MaterialSpinner
+            android:id="@+id/device_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            app:ms_floatingLabelText="Device Suggestion"
+            app:ms_hint="Select Device Suggestion"
+            app:ms_thickness="0.5dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/price_given_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price Given"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/meetingStatusLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:editable="false"
+                android:focusable="false"
+                android:padding="3dp"
+                android:text="Meeting Status:" />
+
+            <RadioGroup
+                android:id="@+id/meetingStatusRG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <RadioButton
+                    android:id="@+id/openRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Open" />
+
+                <RadioButton
+                    android:id="@+id/positiveCloseRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Positive Close" />
+
+                <RadioButton
+                    android:id="@+id/negativeCloseRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Negative Close" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/nextMeetingDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Next Meeting Date"
+                android:inputType="none"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_login"
+            android:text="Submit"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

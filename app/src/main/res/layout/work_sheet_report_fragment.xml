@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+android:id="@+id/main_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/bg_720_1136">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/wsr_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/no_data"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="No Data Available"/>
+
+
+</FrameLayout>
+
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/fab_filter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    android:layout_margin="16dp"
+    android:src="@drawable/icon_filter_small"
+    app:backgroundTint="@color/colorAccent"
+    android:visibility="gone"
+    app:elevation="6dp"
+    app:rippleColor="@color/colorLoginDark"
+    app:pressedTranslationZ="12dp"
+    app:layout_anchorGravity="bottom|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "89901808296",
+    "firebase_url": "https://fleetgaurd-63f0a.firebaseio.com",
+    "project_id": "fleetgaurd-63f0a",
+    "storage_bucket": "fleetgaurd-63f0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89901808296:android:5879fd422ef81900",
+        "android_client_info": {
+          "package_name": "com.anhad.fleetgaurd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89901808296-9rhhn844tf7puh4oi0gsbis7enlpgjuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe4rtV3qzfu0SIB03yhRDK7y083WnIXuA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89901808296-9rhhn844tf7puh4oi0gsbis7enlpgjuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

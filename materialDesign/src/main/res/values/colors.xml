@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#4fab4f</color>
+    <color name="mustered">#aba64f</color>
+    <color name="orange">#ff8800</color>
+    <color name="thumbColor">#66aaaaaa</color>
+    <color name="purple">#c482bd</color>
+    <color name="dark_cyan">#7abfb9</color>
+    <color name="dark_voilet">#4B0082</color>
+
+    <color name="disabled_color">#44000000</color>
+    <color name="light_gray">#dcdcdc</color>
+    <color name="error_color">#E7492E</color>
+</resources>

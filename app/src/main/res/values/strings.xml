@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Fleet Gaurd</string>
+    <string name="ok">OK</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="please_wait">Please wait...</string>
+
+    <string name="required">*Required</string>
+    <string name="old">Old</string>
+    <string name="new_string">New</string>
+    <string name="reference">Reference</string>
+
+    <string-array name="query_type">
+        <item >Device Not Working</item>
+        <item >Software Problem</item>
+        <item >Account</item>
+        <item >New Inquiry</item>
+        <item >Software Demonstration</item>
+        <item >Other</item>
+    </string-array>
+
+    <string-array name="service_type">
+        <item>New Installation</item>
+        <item>Service Free</item>
+        <item>Replacement</item>
+        <item>Service Paid</item>
+    </string-array>
+
+    <string-array name="company_category">
+        <item>Transportal</item>
+        <item>Tour &amp; Travels</item>
+        <item>School Bus</item>
+        <item>Passenger Bus</item>
+        <item>Hospital Vehicles</item>
+        <item>Goverment Fleeties</item>
+        <item>Personal Vehicles</item>
+        <item>Domotics Vehicles</item>
+    </string-array>
+
+    <string-array name="device_suggestion">
+        <item>GT06N</item>
+        <item>GT300</item>
+        <item>CRX1</item>
+        <item>TK06A</item>
+        <item>TK103</item>
+        <item>TELTONIKA</item>
+        <item>ROARAD RUNNER</item>
+        <item>LT300</item>
+        <item>VT10</item>
+        <item>VW08</item>
+        <item>GT03A</item>
+        <item>ET300</item>
+        <item>ST-N900</item>
+        <item>VT200</item>
+        <item>ST-G900</item>
+        <item>JV200</item>
+    </string-array>
+
+
+    <string-array name="expense">
+        <item>Hotel</item>
+        <item>Locality Expense</item>
+        <item>Food</item>
+        <item>Travelling</item>
+        <item>Fuel</item>
+        <item>Miscellaneous</item>
+    </string-array>
+
+    <string-array name="admin_status">
+        <item>completed</item>
+        <item>pending</item>
+        <item>deleted</item>
+    </string-array>
+
+    <string-array name="emp_status">
+        <item>open</item>
+        <item>closed</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
